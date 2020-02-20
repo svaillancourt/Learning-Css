@@ -1,0 +1,13 @@
+p {
+	font-family: Helvetica, Arial;
+	font-size: 15px;
+    line-height: 1.5;
+    color: #0bafcc ; 			/*  there are a few ways to do colour */
+}
+
+article {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 20px;
+    line-height: 1.5;
+    color: #d45912 ; 			/*  there are a few ways to do colour */
+}
