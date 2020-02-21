@@ -3,53 +3,77 @@
     <head>
         <title>Let's Learn CSS</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- to convert to mobile format  -->
-        <link rel="icon" href="./img/favicon2.png" type="image/gif" sizes="16x16">    <!-- favicon works for  -->
+        <link rel="icon" href="./img/favicon.gif" type="image/gif" sizes="16x16">    <!-- favicon works for  -->
+        <link rel="stylesheet" href="./css/accessibility-functions.css">    <!-- reference your css style folder -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/cats.css">    <!-- reference your css style folder -->
+        <link rel="stylesheet" href="./css/nav-bar.css">    <!-- reference your css style folder -->
         <link rel="stylesheet" href="./css/main.css">    <!-- reference your css style folder -->
         <script scr="./js/scripts.js"></script>          <!-- reference your java style folder  -->
     </head>
-    <body>
-       
-        <h1>Let's Learn CSS!</h1>
+    <body>      
         <nav>
             <ul>
                 <li>
                     <a href="./index.html">
-                        Home
-                </li>
-                    </a>
+                    Home
+                </a>
+                </li>                    
                 <li>
-                    <a href="#five-part">           <!-- # defines the class aka reference point -->
-                        Skip to the finale (spoilers)
+                    <a href="#third-part">           <!-- # defines the class aka reference point but drop the # when you wanna reference it  --> <!--drop down ancher-->
+                    Third act
+                    </a>
+                </li>
+                <li>
+                    <a href="#finale-part">           <!-- # defines the class aka reference point but drop the # when you wanna reference it  --> <!--drop down ancher-->
+                    Finale
                     </a>
                 </li>
                 <li>
                     <a href="./box-model.html">
-                        View Box Model
+                    View Box Model
                     </a>
                 </li>
             </ul>
         </nav>
+        <h1>Let's Learn CSS!</h1>
         <article>
             <h2>First cut is the deepest</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et dapibus libero, sed laoreet lectus. Vivamus gravida turpis quis sem finibus hendrerit. Sed nec fringilla dui. Nam sed tincidunt mauris. Maecenas mollis, urna ac elementum pulvinar, ligula leo rutrum mauris, et faucibus tortor enim sit amet lorem. Aenean a dictum est, varius laoreet eros. Quisque id nibh et mauris venenatis tristique.  
             </p>
-            <h2 id="#second-part">The second cut is deeper</h2>
+            <h2>The second cut is deeper</h2>     
             <p>
+            <!-- <p class="overflow-visible"> -->
                 Duis aliquam mattis nibh sed porttitor. Nulla varius, tellus sit amet consectetur egestas, magna risus tincidunt nisl, sed ultrices orci arcu nec odio. Nunc vestibulum sapien sed euismod egestas. Ut ultrices sit amet sapien et eleifend. Mauris vitae orci lobortis, ultricies enim in, blandit mi. Phasellus ut dapibus elit. Ut eget mi sit amet diam elementum porttitor ut vel massa. Sed non ipsum porttitor, venenatis dui in, porta velit. Ut ac mauris metus. Donec dictum nec mi eget efficitur. Quisque sed ex aliquam, viverra arcu efficitur, pharetra neque. Aliquam ut bibendum eros. Morbi libero mi, ultrices eget pulvinar ut, efficitur sit amet mi.
-            </p>
-            <h2 id="#third-part">The third cut you should call an ambluance</h2>
 
+                <img src="./img/raptor-mascot.jpg" alt="the toronto raptors home court layout" title="Toronto Raptors mascot" width="100" id="float-practice">
+            </p>
+            <h2 id="third-part">The third cut you should call an ambluance</h2> <!--drop down ancher-->
             <p>
                 Duis ornare euismod est sed porta. Donec hendrerit orci id felis dictum porta. Quisque mattis bibendum turpis, quis vulputate quam venenatis quis. Maecenas suscipit, leo non auctor laoreet, mi eros tristique est, at convallis nunc sem vitae tortor. Suspendisse ut ultricies diam. Praesent at est metus. Praesent tristique consectetur magna a blandit.
             </p>
-            <h2 id="#fourth-part">The fourth cut you should just stop it</h2>
-            <p>
+            <h2>The fourth cut you should just stop it</h2>
+            <p class="overflow-scroll">
+                Cras nunc lorem, fermentum placerat fringilla sit amet, commodo sed ligula. Sed pulvinar lacus vel ligula molestie tempor. Phasellus libero velit, pulvinar nec tellus id, euismod bibendum mauris. Nulla aliquam maximus odio, et pharetra metus. Suspendisse sed nisi vitae nulla iaculis scelerisque. Aliquam lorem ligula, varius non volutpat quis, convallis non elit. Donec malesuada bibendum tempus. Pellentesque euismod vestibulum est, sed pellentesque sem laoreet lobortis. In at convallis nisl. Quisque condimentum consequat arcu quis accumsan. Duis venenatis vulputate mollis.
+
                 Cras nunc lorem, fermentum placerat fringilla sit amet, commodo sed ligula. Sed pulvinar lacus vel ligula molestie tempor. Phasellus libero velit, pulvinar nec tellus id, euismod bibendum mauris. Nulla aliquam maximus odio, et pharetra metus. Suspendisse sed nisi vitae nulla iaculis scelerisque. Aliquam lorem ligula, varius non volutpat quis, convallis non elit. Donec malesuada bibendum tempus. Pellentesque euismod vestibulum est, sed pellentesque sem laoreet lobortis. In at convallis nisl. Quisque condimentum consequat arcu quis accumsan. Duis venenatis vulputate mollis.
             </p>
-            <h2 id="#five-part">The finale</h2>
+            <h2 id="finale-part">The finale</h2> <!--drop down ancher-->
             <p>
-                Nullam efficitur sapien in urna ultricies, ac porta elit venenatis. Nam ut tincidunt felis, vel consequat felis. Donec semper tempor est. Proin id dolor mauris. Sed sed elementum nulla. Cras mi diam, porttitor sit amet auctor nec, semper vel justo. Vestibulum posuere porta magna ac dapibus. Aenean consequat risus eget tellus egestas euismod.
+                Nullam efficitur sapien in urna ultricies, ac porta elit venenatis. Nam ut tincidunt felis, vel consequat felis. 
+                Donec semper tempor est. Proin id dolor mauris. Sed sed elementum nulla. Cras mi diam, porttitor sit amet auctor nec, semper vel justo. Vestibulum posuere porta magna ac dapibus. Aenean consequat risus eget tellus egestas euismod.
+
+                <img src="./img/nyan-cat.gif" alt="nyam cat" title="nyam cat" width="200" id="z-index-0">
+                <img src="./img/nyan-cat.gif" alt="nyam cat" title="nyam cat" width="200" id="z-index-1">
+                <img src="./img/nyan-cat.gif" alt="nyam cat" title="nyam cat" width="200" id="z-index-2">
+                <img src="./img/nyan-cat.gif" alt="nyam cat" title="nyam cat" width="200" id="z-index-3">
+                <img src="./img/nyan-cat.gif" alt="nyam cat" title="nyam cat" width="200" id="z-index-4">
+                <img src="./img/nyan-cat.gif" alt="nyam cat" title="nyam cat" width="200" id="z-index-5">
+                <img src="./img/nyan-cat.gif" alt="nyam cat" title="nyam cat" width="200" id="z-index-6">
+                <img src="./img/nyan-cat.gif" alt="nyam cat" title="nyam cat" width="200" id="z-index-7">
+                <img src="./img/nyan-cat.gif" alt="nyam cat" title="nyam cat" width="200" id="z-index-8">
+                <img src="./img/nyan-cat.gif" alt="nyam cat" title="nyam cat" width="200" id="z-index-9">
             </p>
         </article>
     </body>

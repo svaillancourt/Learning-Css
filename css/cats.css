@@ -1,0 +1,98 @@
+#z-index-0 {         
+    display:block;
+    position: absolute;
+    top: 150px;
+    right:  800px;
+    left: 0px;
+    margin: auto;
+    z-index: 2; /*Wisual layering... photoshop*/
+}
+#z-index-1 {         
+    display:block;
+    position: absolute;
+    top: 350px;
+    right:  800px;
+    left: 0px;
+    margin: auto;
+    z-index: 2; /*Wisual layering... photoshop*/
+}
+
+#z-index-2 {         
+    display:block;
+    position: absolute;
+    top: 550px;
+    right:  800px;
+    left: 0px;
+    margin: auto;
+    z-index: 2; /*Wisual layering... photoshop*/
+}
+
+#z-index-3 {         
+    display:block;
+    position: absolute;
+    top: 750px;
+    right:  800px;
+    left: 0px;
+    margin: auto;
+    z-index: 2; /*Wisual layering... photoshop*/
+}
+
+#z-index-4 {         
+    display:block;
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    left:  850px;
+    margin: auto;
+    z-index: 2; /*Wisual layering... photoshop*/
+}
+
+#z-index-5 {         
+    display:block;
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    left:  850px;
+    margin: auto;
+    z-index: 2; /*Wisual layering... photoshop*/
+}
+
+#z-index-6 {         
+    display:block;
+    position: absolute;
+    top: 550px;
+    right: 0px;
+    left:  850px;
+    margin: auto;
+    z-index: 2; /*Wisual layering... photoshop*/
+}
+
+#z-index-7 {         
+    display:block;
+    position: absolute;
+    top: 750px;
+    right: 0px;
+    left:  850px;
+    margin: auto;
+    z-index: 2; /*Wisual layering... photoshop*/
+}
+
+#z-index-8 {         
+    display:block;
+    position: absolute;
+    top: 950px;
+    right: 0px;
+    left:  850px;
+    margin: auto;
+    z-index: 2; /*Wisual layering... photoshop*/
+}
+
+#z-index-9 {         
+    display:block;
+    position: absolute;
+    top: 950px;
+    right: 800px;
+    left:  0px;
+    margin: auto;
+    z-index: 2; /*Wisual layering... photoshop*/
+}
