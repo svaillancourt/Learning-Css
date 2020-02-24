@@ -2,10 +2,10 @@
 
 nav{
     width: auto;
-    max-width: 800px;
+    max-width: auto;    /* makes the width the lenght of the screen*/
 
     position: relative;
-    margin: 16px auto;  /* top & botton, left & right*/
+    margin: 0px auto;  /* top & botton, left & right*/
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;

@@ -1,0 +1,52 @@
+/* @import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap'); */
+
+/*font-family: 'ZCOOL QingKe HuangYou', ;*/
+
+@font-face{
+    font-family: 'Jet Brains';
+    src: url('../fonts/jetbrains-mono/JetBrainsMono-Regular.ttf');
+    src: url('../fonts/jetbrains-mono/JetBrainsMono-Regular.ttf') format('truetype'); /*this line is for backwards compatitiblity*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Jet Brains';
+    src: url('../fonts/jetbrains-mono/JetBrainsMono-Medium.ttf');
+    src: url('../fonts/jetbrains-mono/JetBrainsMono-Medium.ttf') format('truetype'); /*this line is for backwards compatitiblity*/
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Jet Brains';
+    src: url('../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf');
+    src: url('../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf') format('truetype'); /*this line is for backwards compatitiblity*/
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Jet Brains';
+    src: url('../fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.ttf');
+    src: url('../fonts/jetbrains-mono/JetBrainsMono-Bold-Italic.ttf') format('truetype'); /*this line is for backwards compatitiblity*/
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Jet Brains';
+    src: url('../fonts/jetbrains-mono/JetBrainsMono-Italic.ttf');
+    src: url('../fonts/jetbrains-mono/JetBrainsMono-Italic.ttf') format('truetype'); /*this line is for backwards compatitiblity*/
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: 'Jet Brains';
+    src: url('../fonts/jetbrains-mono/JetBrainsMono-Medium-Italic.ttf');
+    src: url('../fonts/jetbrains-mono/JetBrainsMono-Medium-Italic.ttf') format('truetype'); /*this line is for backwards compatitiblity*/
+    font-weight: medium;
+    font-style: italic;
+}
+
