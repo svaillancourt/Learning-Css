@@ -11,8 +11,11 @@
     font-size: 16px;  
 }
 
+/* -=-=-=--=-=-=-=-=-=- Moble Version -=-=-=--=-=-=-=-=-=- */
+
+
 body{
-    background-color: rgb(15, 77, 143);
+    background-color: grey;
     /*background-image: url("../img/background.gif");*/
     background-size: cover;
     background-repeat: no-repeat;   /*show one of the image, instead */
@@ -39,8 +42,8 @@ h1{
     padding-top: 30px;      /*  tied to spacing surrounding content */
     padding-bottom: 20px;
 
-    font-size: 30px;    
     text-align: center;
+    font-size: 26px;    
     color: pink ;  
 }
 
@@ -51,6 +54,7 @@ h2{
     margin-left: auto;
     margin-right: auto;
 
+    text-align: center;
     padding: 5px;
 
     font-size: 20px;    
@@ -62,7 +66,7 @@ article {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-   	font-size: 20px;    
+   	font-size: 100px;    
     color: #d45912 ; 			/*  there are a few ways to do colour */
     line-height: 1.5;
     
@@ -79,13 +83,17 @@ section {
     
 }
 
-p {
+p,li {
     max-width: 600px;
 
     font-size: 15px;
     color: #ffffff ; 			/*  there are a few ways to do colour */
     line-height: 1.5;
     padding: 10px;
+}
+
+li{
+    text-align: center;
 }
 
 /* classes */
@@ -128,7 +136,8 @@ p {
     margin: auto;
     z-index: 2; /*Wisual layering... photoshop*/
 }
-  /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
 #background-bullets, /* Combining 2 ids */
 
@@ -170,22 +179,80 @@ p {
 #social-media-links li{ /* Direct child selector ">" 
     The LI must be directly inside the element with the "social-media-links" id in this case.*/
     display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
 }
 
 #social-media-links .fab{     
     
     /* RGBA - the a stands for ALPHA channel=selector with nesting.*/
     /* for alpha: 1 = opaque; 0 = transparent. You can use values inbetween like "0.5" to mark it as semi-transparent. */
-    color:rgb(251, 255, 10,1);
+    color:rgb(7, 140, 250);
     font-size: 40px;
 }
 
 #social-media-links a:hover .fab,
 #social-media-links a:focus .fab,
 #social-media-links a:active .fab{     /* Psuedo=selector with nesting.*/
-    color:rgb(128, 255, 43);
+    color:rgb(159, 11, 196);
     font-size: 40px;
+}
+
+/* -=-=-=--=-=-=-=-=-=- Desktop Version -=-=-=--=-=-=-=-=-=- */
+
+@media screen and ( min-width: 500px ) {
+
+Body{
+    background-color: rgb(15, 77, 143);
+
+}
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 20px;
+    text-align: left;
+
+}
+
+h3{
+    font-size: 0px;
+}
+
+h4{
+
+    font-size: 0px;
+}
+article{
+    
+    font-size: 20px;
+
+}
+
+section{
+    
+    font-size: 20px;
+}
+
+p{
+    font-size: 15px;
+}
+
+#social-media-links li{ /* Direct child selector ">" 
+    The LI must be directly inside the element with the "social-media-links" id in this case.*/
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+#social-media-links a:hover .fab,
+#social-media-links a:focus .fab,
+#social-media-links a:active .fab{     /* Psuedo=selector with nesting.*/
+   
+    color:rgb(0, 183, 255);
+    font-size: 40px;
+}
+
 }
