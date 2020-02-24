@@ -161,3 +161,31 @@ p {
     padding: 8px 8px 8px 64px;
 }
 
+#social-media-links {
+    list-style: none;
+    text-align: center;
+
+}
+
+#social-media-links li{ /* Direct child selector ">" 
+    The LI must be directly inside the element with the "social-media-links" id in this case.*/
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+#social-media-links .fab{     
+    
+    /* RGBA - the a stands for ALPHA channel=selector with nesting.*/
+    /* for alpha: 1 = opaque; 0 = transparent. You can use values inbetween like "0.5" to mark it as semi-transparent. */
+    color:rgb(251, 255, 10,1);
+    font-size: 40px;
+}
+
+#social-media-links a:hover .fab,
+#social-media-links a:focus .fab,
+#social-media-links a:active .fab{     /* Psuedo=selector with nesting.*/
+    color:rgb(128, 255, 43);
+    font-size: 40px;
+}

@@ -2,6 +2,20 @@
 
 /*font-family: 'ZCOOL QingKe HuangYou', ;*/
 
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf'); 
+    src: /* Youn would want to have all the main formats in each @font-face! */
+        url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.woff') 
+        format( 'woff' ),
+        url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.ttf') 
+        format( 'truetyle' ),
+        url( '../fonts/jetbrains-mono/JetBrainsMono-Bold.svg') 
+        format( 'svg' );
+    font-weight: bold;
+    font-style: normal;
+}
+
 @font-face{
     font-family: 'Jet Brains';
     src: url('../fonts/jetbrains-mono/JetBrainsMono-Regular.ttf');
