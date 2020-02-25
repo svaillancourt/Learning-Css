@@ -113,6 +113,52 @@ li{
     height: 200px;       /* determines the height of the box*/
 }
 
+.gradient-bg{
+    height: 300px;
+    opacity: 0.75;
+
+    /* Gradient generated at https://CSSGradoemt.IO */
+    background: rgb(63,94,251);
+    background: linear-gradient(129deg, rgba(63,94,251,1) 0%, rgba(116,87,211,1) 13%, rgba(217,213,219,1) 37%, rgba(192,78,153,1) 59%, rgba(112,230,174,1) 86%, rgba(252,70,107,1) 100%);
+    box-shadow: 32px 32px 0 0 rgba(0,0,0,1);
+}
+
+.speech-bubble{
+    background: rgba(255,255,255,0.95);
+    border-radius: 1.5em;       /*em is an ajustable size measurement*/
+    border-bottom-right-radius: 0 ;
+   
+    max-width: 300px;
+    margin-top: 75px;
+    padding: 1.5em;
+    position: relative;
+
+    color: rgba(0, 0, 0, 1);
+}
+
+.speech-bubble::after{  
+    /* Pseudo-elements require the "content" property.*/
+    content:'';
+    /*Start triangle -->*/
+    display: block;
+    width: 0;
+    height: 0;
+    box-shadow: content-box;
+    
+    border-top: 0 solid transparent;
+    border-right: 32px solid rgba(255,255,255,0.95);
+    border-bottom: 32px solid transparent;
+    border-left: 0 solid transparent;
+    /*<-- end triangle.*/
+    /* Position it at the bottom right corner: */
+    position: absolute;
+    top:100%;
+    right:0;
+
+}
+
+
+
 /* # creating and managing ID's */   
 /* reference it by id="float-practice" */   
 
@@ -199,12 +245,17 @@ li{
     font-size: 40px;
 }
 
+
+
 /* -=-=-=--=-=-=-=-=-=- Desktop Version -=-=-=--=-=-=-=-=-=- */
 
 @media screen and ( min-width: 500px ) {
 
 Body{
+    /*background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);*/
     background-color: rgb(15, 77, 143);
+    /*Background: linear-gradient(30deg, blue 0%, green 100%);*/
+
 
 }
 h1{
