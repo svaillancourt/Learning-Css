@@ -157,7 +157,96 @@ li{
 
 }
 
+/* buttons */
 
+.transition-transform button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: fuchsia;
+    background: lavenderblush;
+
+    padding: 8px 16px;
+    border: 3px solid black;
+    margin: 32px;
+    cursor: pointer;    /* changed the pointer to a hand */ 
+    /* cursor: URL(./gifs/megaman.gif), auto; */
+
+    transition: 
+    1s linear border,
+    0.3s ease-in padding,
+    0.5s ease-in-out background-color,
+    2s ease color,
+    4s ease font-size;
+}
+
+.transition-transform button:hover,
+.transition-transform button:focus,
+.transition-transform button:active{
+
+    color: lavender;
+    background: fuchsia;
+
+    padding: 12px 20px;
+    border: 6px dotted indigo;
+}
+
+/* transform / hover example: */
+
+.transition-transform div{
+    transition: 1s ease transform;
+}
+
+.transition-transform div:hover + div{
+    transform: 
+        translate(100px,-50px)
+        rotate( 40deg )
+        scale( 1.25 )
+}
+
+
+/* videos */
+
+.video-section {
+    position: relative;
+    overflow: hidden;
+    padding: 16px;
+    margin-top: 64px;
+}
+
+.video-section > * {
+    position: relative;
+    z-index: 3;
+}
+
+.video-section p {
+    background: none;
+}
+
+/* Backround video. */
+.video-section video {
+    position: absolute;
+    /* top: 0; */
+    right: 0;
+    bottom: 0;
+    /* left: 0; */
+    width: 150%;
+    height: auto;
+    z-index: 1;
+}
+
+/* "Whiteout" overlay */
+.video-section::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba( 255, 255, 255, 0.33 );
+    z-index: 2;
+}
 
 /* # creating and managing ID's */   
 /* reference it by id="float-practice" */   
