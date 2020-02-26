@@ -154,7 +154,6 @@ li{
     position: absolute;
     top:100%;
     right:0;
-
 }
 
 /* buttons */
@@ -181,7 +180,6 @@ li{
 .transition-transform button:hover,
 .transition-transform button:focus,
 .transition-transform button:active{
-
     color: lavender;
     background: fuchsia;
 
@@ -192,16 +190,25 @@ li{
 /* transform / hover example: */
 
 .transition-transform div{
+    
+    display: inset-block;
+    padding: 8px 16px;
+    background-color: lime;
+    cursor: pointer;
     transition: 1s ease transform;
 }
 
-.transition-transform div:hover + div{
-    transform: 
-        translate(100px,-50px)
-        rotate( 40deg )
-        scale( 1.25 )
+.transition-transform div + div { /* find a div Beside a div... this is a "directly followed by" sibling selector.  */
+    background-color: #d45912;
+    pointer-events: none;
 }
 
+.transition-transform div:hover + div{ /* Now we're combining our pseudo (state) selector for hover, and telling the foolowing div how to behave!*/
+    transform: 
+        translate(100px,-50px) /* move based on x and y coordinates.  */
+        rotate( 40deg ) /* Roation in degrees */
+        scale( 1.25 ) /* Resize the elements (1=100; 0=0%; 2=200; etc.*/
+}
 
 /* videos */
 
@@ -308,7 +315,6 @@ li{
 #social-media-links {
     list-style: none;
     text-align: center;
-
 }
 
 #social-media-links li{ /* Direct child selector ">" 
@@ -320,7 +326,6 @@ li{
 }
 
 #social-media-links .fab{     
-    
     /* RGBA - the a stands for ALPHA channel=selector with nesting.*/
     /* for alpha: 1 = opaque; 0 = transparent. You can use values inbetween like "0.5" to mark it as semi-transparent. */
     color:rgb(7, 140, 250);
@@ -335,7 +340,6 @@ li{
 }
 
 
-
 /* -=-=-=--=-=-=-=-=-=- Desktop Version -=-=-=--=-=-=-=-=-=- */
 
 @media screen and ( min-width: 500px ) {
@@ -344,9 +348,8 @@ Body{
     /*background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);*/
     background-color: rgb(15, 77, 143);
     /*Background: linear-gradient(30deg, blue 0%, green 100%);*/
-
-
 }
+
 h1{
     font-size: 30px;
 }
@@ -354,7 +357,6 @@ h1{
 h2{
     font-size: 20px;
     text-align: left;
-
 }
 
 h3{
@@ -362,17 +364,14 @@ h3{
 }
 
 h4{
-
     font-size: 0px;
 }
-article{
-    
-    font-size: 20px;
 
+article{
+    font-size: 20px;
 }
 
 section{
-    
     font-size: 20px;
 }
 
@@ -387,12 +386,11 @@ p{
     margin-right: 10px;
     margin-bottom: 30px;
 }
+
 #social-media-links a:hover .fab,
 #social-media-links a:focus .fab,
 #social-media-links a:active .fab{     /* Psuedo=selector with nesting.*/
    
-    color:rgb(0, 183, 255);
+    color:rgb(74, 253, 29);
     font-size: 40px;
-}
-
-}
+}}
